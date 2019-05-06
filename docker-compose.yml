@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+    web:
+        build: docker/nginx
+        ports:
+            - "8080:80"
+        volumes:
+            - .:/code
+        networks:
+            - code-network
+    php:
+        build: docker/php
+        volumes:
+            - .:/code
+        networks:
+            - code-network
+
+networks:
+    code-network:
+        driver: bridge
