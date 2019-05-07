@@ -1,6 +1,5 @@
 <?php
 //db settings
-
 define('APP_ROOT', __DIR__);
 
 return [
@@ -21,12 +20,12 @@ return [
 
             'connection' => [
                 'driver' => 'pdo_mysql',
-                'host' => 'localhost',
-                'port' => 8082,
+                'memory' => true,
+                'host' => 'mysql',
+//                'port' => 8082,
                 'dbname' => 'slim_app_db',
                 'user' => 'slim_user',
-                'password' => 'root',
-                'charset' => 'utf-8'
+                'password' => 'password'
             ]
         ]
     ]

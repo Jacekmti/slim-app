@@ -3,12 +3,13 @@
     "php": ">=7.1.0",
     "phpunit/phpunit": "^7",
     "slim/slim": "^3.12",
-    "doctrine/orm": "^2"
+    "doctrine/orm": "^2",
+    "ext-pdo": "*"
   },
 
   "autoload": {
     "psr-4": {
-      "TDD\\": "code/TDD"
+      "src\\": "src"
     }
   }
 }
