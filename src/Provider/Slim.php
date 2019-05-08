@@ -2,7 +2,8 @@
 
 namespace src\Provider;
 
-use src\Domain\User;
+use Slim\Http\Request;
+use Slim\Http\Response;
 use Doctrine\ORM\EntityManager;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -32,6 +33,11 @@ class Slim implements ServiceProviderInterface
             $app = new App($cnt);
 
             $app->post('/users', UserRepository::class);
+
+            $app->get('/', function (Request $request, Response $response, array $args) {
+                return $this->view->render($response, 'signin.twig');
+            });
+
             return $app;
         };
     }
