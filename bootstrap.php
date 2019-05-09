@@ -1,7 +1,7 @@
 <?php
 
-use src\Provider\Doctrine;
-use src\Provider\Slim;
+use App\Provider\Doctrine;
+use App\Provider\Slim;
 use Slim\Container;
 
 require_once __DIR__ . '/vendor/autoload.php';
