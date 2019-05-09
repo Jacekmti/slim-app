@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Provider;
+namespace App\Provider;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Cache\FilesystemCache;

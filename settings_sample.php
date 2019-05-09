@@ -22,7 +22,6 @@ return [
                 'driver' => 'pdo_mysql',
                 'memory' => true,
                 'host' => 'mysql',
-//                'port' => 8082,
                 'dbname' => 'slim_app_db',
                 'user' => 'slim_user',
                 'password' => 'password'

@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Repository;
+namespace App\Repository;
 
 use src\Domain\User;
 use Doctrine\ORM\EntityManager;

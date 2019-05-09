@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Provider;
+namespace App\Provider;
 
 use Slim\Http\Request;
 use Slim\Http\Response;
