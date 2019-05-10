@@ -1,6 +1,5 @@
 .idea/
 vendor/*
-composer.lock
 var/*
 settings.php
 code/*
