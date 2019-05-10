@@ -20,6 +20,7 @@ $cnt['view'] = function ($cnt) {
         ]);
 };
 
+
 $cnt->register(new Doctrine())
     ->register(new Slim());
 

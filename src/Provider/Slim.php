@@ -2,13 +2,13 @@
 
 namespace App\Provider;
 
+use App\Repository\UserRepository;
 use Slim\Http\Request;
 use Slim\Http\Response;
 use Doctrine\ORM\EntityManager;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use Slim\App;
-use src\Repository\UserRepository;
 /**
  * A ServiceProvider for registering services related
  * to Slim such as request handlers, routing and the
